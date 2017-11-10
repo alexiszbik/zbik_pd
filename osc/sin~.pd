@@ -1,0 +1,18 @@
+#N canvas 521 149 450 300 10;
+#X obj 132 185 switch~;
+#X obj 28 29 inlet;
+#X obj 25 63 osc~;
+#X obj 25 111 outlet~;
+#X obj 187 31 inlet phase;
+#X obj 94 32 inlet;
+#X msg 94 110 1;
+#X obj 100 77 route sin;
+#X msg 153 106 0;
+#X connect 1 0 2 0;
+#X connect 2 0 3 0;
+#X connect 4 0 2 1;
+#X connect 5 0 7 0;
+#X connect 6 0 0 0;
+#X connect 7 0 6 0;
+#X connect 7 1 8 0;
+#X connect 8 0 0 0;
