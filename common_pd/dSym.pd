@@ -1,0 +1,10 @@
+#N canvas 268 359 449 191 10;
+#X obj 30 36 loadbang;
+#X obj 30 146 outlet;
+#X obj 30 79 symbol \$1;
+#X msg 30 109 \$1;
+#X text 124 33 dSym;
+#X text 123 49 Default symbol value;
+#X connect 0 0 2 0;
+#X connect 2 0 3 0;
+#X connect 3 0 1 0;

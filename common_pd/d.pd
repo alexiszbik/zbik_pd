@@ -1,0 +1,8 @@
+#N canvas 268 359 434 165 10;
+#X obj 32 30 loadbang;
+#X obj 32 99 outlet;
+#X obj 33 60 \$1;
+#X text 111 30 d;
+#X text 111 47 Declare a default value;
+#X connect 0 0 2 0;
+#X connect 2 0 1 0;
