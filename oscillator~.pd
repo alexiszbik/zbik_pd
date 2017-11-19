@@ -22,9 +22,11 @@
 #X obj 780 338 *~;
 #X obj 379 296 *~ 0.707;
 #X obj 75 288 *~ 1.22;
-#X obj 317 7 dSym sin;
 #X obj 838 14 declare -path common_pd;
 #X obj 570 33 d 0;
+#X obj 341 36 symbol \$1;
+#X msg 341 58 \$1;
+#X obj 342 11 loadbang;
 #X connect 0 0 9 0;
 #X connect 2 0 21 0;
 #X connect 3 0 1 0;
@@ -68,5 +70,7 @@
 #X connect 19 0 1 0;
 #X connect 20 0 1 0;
 #X connect 21 0 1 0;
-#X connect 22 0 9 0;
-#X connect 24 0 4 0;
+#X connect 23 0 4 0;
+#X connect 24 0 25 0;
+#X connect 25 0 9 0;
+#X connect 26 0 24 0;

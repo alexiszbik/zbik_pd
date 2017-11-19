@@ -1,13 +1,13 @@
 #N canvas 611 24 616 589 10;
-#X obj 78 184 / 127;
+#X obj 80 184 / 127;
 #X obj 79 147 sel 0;
 #X obj 180 300 pack f f;
 #X msg 151 370 0 \$2;
-#X obj 82 410 vline~;
-#X obj 84 286 pack f f f f;
-#X msg 80 338 \$1 \$2 \, \$4 \$3 \$2;
+#X obj 82 399 vline~;
+#X obj 81 286 pack f f f f;
+#X msg 81 333 \$1 \$2 \, \$4 \$3 \$2;
 #X obj 272 212 *;
-#X obj 84 450 outlet~ amp;
+#X obj 82 446 outlet~ amp;
 #X obj 78 25 inlet velocity;
 #X obj 199 76 route attack decay sustain release;
 #X obj 198 25 inlet settings;
@@ -19,7 +19,7 @@
 #X obj 252 154 d 200;
 #X obj 319 156 d 1;
 #X obj 414 159 d 200;
-#X obj 79 242 t f f;
+#X obj 81 242 t f f;
 #X connect 0 0 20 0;
 #X connect 1 0 2 0;
 #X connect 1 1 0 0;
