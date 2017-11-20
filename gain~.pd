@@ -1,0 +1,12 @@
+#N canvas 0 23 450 300 10;
+#X obj 215 122 pow 2;
+#X obj 184 145 smooth~;
+#X obj 159 163 *~;
+#X obj 155 106 inlet~;
+#X obj 160 205 outlet~;
+#X obj 269 53 inlet gain;
+#X connect 0 0 1 0;
+#X connect 1 0 2 1;
+#X connect 2 0 4 0;
+#X connect 3 0 2 0;
+#X connect 5 0 0 0;
