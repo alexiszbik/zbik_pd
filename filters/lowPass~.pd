@@ -3,12 +3,14 @@
 #X obj 75 9 inlet~;
 #X obj 76 177 outlet~;
 #X obj 107 35 inlet freq;
-#X obj 154 125 ../common_pd/d 0.75;
-#X obj 133 58 ../common_pd/d 22000;
 #X obj 138 102 inlet Q;
+#X obj 133 58 d 22000;
+#X obj 154 125 d 0.75;
+#X obj 107 79 clip 20 22000;
 #X connect 0 0 2 0;
 #X connect 1 0 0 0;
-#X connect 3 0 0 1;
+#X connect 3 0 7 0;
 #X connect 4 0 0 2;
 #X connect 5 0 0 1;
 #X connect 6 0 0 2;
+#X connect 7 0 0 1;
